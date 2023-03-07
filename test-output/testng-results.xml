@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="85452" started-at="2023-03-07T17:49:33 IST" finished-at="2023-03-07T17:50:58 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="85452" started-at="2023-03-07T17:49:33 IST" finished-at="2023-03-07T17:50:58 IST">
+      <class name="Tests.DashboardWidgetsTest">
+        <test-method status="PASS" signature="browserConfiguration()[pri:0, instance:Tests.DashboardWidgetsTest@5891e32e]" name="browserConfiguration" is-config="true" duration-ms="41968" started-at="2023-03-07T17:49:33 IST" finished-at="2023-03-07T17:50:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfiguration -->
+        <test-method status="PASS" signature="checkWidgetsAdminTest()[pri:0, instance:Tests.DashboardWidgetsTest@5891e32e]" name="checkWidgetsAdminTest" duration-ms="7512" started-at="2023-03-07T17:50:15 IST" finished-at="2023-03-07T17:50:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkWidgetsAdminTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Tests.DashboardWidgetsTest@5891e32e]" name="TearDown" is-config="true" duration-ms="1044" started-at="2023-03-07T17:50:22 IST" finished-at="2023-03-07T17:50:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="browserConfiguration()[pri:0, instance:Tests.DashboardWidgetsTest@5891e32e]" name="browserConfiguration" is-config="true" duration-ms="26748" started-at="2023-03-07T17:50:23 IST" finished-at="2023-03-07T17:50:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfiguration -->
+        <test-method status="PASS" signature="checkWidgetsESSTest()[pri:0, instance:Tests.DashboardWidgetsTest@5891e32e]" name="checkWidgetsESSTest" duration-ms="7047" started-at="2023-03-07T17:50:50 IST" finished-at="2023-03-07T17:50:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkWidgetsESSTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:Tests.DashboardWidgetsTest@5891e32e]" name="TearDown" is-config="true" duration-ms="1020" started-at="2023-03-07T17:50:57 IST" finished-at="2023-03-07T17:50:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Tests.DashboardWidgetsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
