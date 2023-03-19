@@ -19,9 +19,6 @@ public class ExcelReader {
 		int row = sheet.getPhysicalNumberOfRows();
 		int column = sheet.getRow(0).getLastCellNum();
 
-		System.out.println("row : " + row);
-		System.out.println("column : " + column);
-
 		data = new Object[row][column];
 
 		for (int i = 1; i < row; i++) {				//skip 1st row

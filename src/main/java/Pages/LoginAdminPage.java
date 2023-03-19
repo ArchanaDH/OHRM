@@ -1,11 +1,14 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
-import Base.OrangeHRMBase;
+public class LoginAdminPage {
 
-public class LoginAdminPage extends OrangeHRMBase {
-
+	WebDriver driver;
+	public LoginAdminPage(WebDriver driver) {
+		this.driver = driver;
+	}
 	public void login(String usernameAdmin, String passwordAdmin) {
 
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(usernameAdmin);

@@ -1,11 +1,14 @@
 package Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
-import Base.OrangeHRMBase;
+public class DashboardWidgetsPage {
 
-public class DashboardWidgetsPage extends OrangeHRMBase{
-
+	WebDriver driver;
+	public DashboardWidgetsPage(WebDriver driver) {
+		this.driver = driver;
+	}
 	public boolean checkTimeAtWorkWidget()
 	{
 		return driver.findElement(By.xpath("//p[text()='Time at Work']")).isDisplayed();

@@ -17,7 +17,7 @@ public class LoginESSTest extends OrangeHRMBase{
 	public void browserConfig()
 	{
 		initialization();
-		ls = new LoginESSPage();
+		ls = new LoginESSPage(driver);
 	}
 	
 	@Test(priority = 0)
@@ -46,12 +46,17 @@ public class LoginESSTest extends OrangeHRMBase{
 	}
 	
 	@DataProvider
-	public Object[][] getExcelData() throws IOException
-	{
-		ExcelReader reader = new ExcelReader();
+	public Object[][] getExcelData()
+	{		
 		String filePath = "..\\Exclr_Project_OHRM\\src\\main\\java\\config\\data.xlsx";
 		String sheetName = "LoginDataESS";
-		return reader.getData(filePath, sheetName);
+		try {
+			ExcelReader reader = new ExcelReader();
+			return reader.getData(filePath, sheetName);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 	@AfterMethod

@@ -19,7 +19,7 @@ public class LoginAdminTest extends OrangeHRMBase {
 	@BeforeMethod
 	public void browserConfig() {
 		initialization();
-		lp = new LoginAdminPage();
+		lp = new LoginAdminPage(driver);
 	}
 
 	@Test(priority = 0)
@@ -30,7 +30,7 @@ public class LoginAdminTest extends OrangeHRMBase {
 	}
 
 	@Test(dataProvider = "getExcelData", priority = 1)
-	public void loginValidTest(String username, String password, String Type) 
+	public void adminLoginTest(String username, String password, String Type) 
 	{
 		if(username != null)
 		{
@@ -49,12 +49,17 @@ public class LoginAdminTest extends OrangeHRMBase {
 	}
 
 	@DataProvider
-	public Object[][] getExcelData() throws IOException {
+	public Object[][] getExcelData() {
 
-		ExcelReader reader = new ExcelReader();
 		String filePath = "E:\\EclipseWorkspace1\\Exclr_Project_OHRM\\src\\main\\java\\config\\data.xlsx";
 		String sheetName = "LoginDataAdmin";
-		return reader.getData(filePath, sheetName);
+		try {
+			ExcelReader reader = new ExcelReader();
+			return reader.getData(filePath, sheetName);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	@AfterMethod

@@ -18,8 +18,8 @@ public class DashboardWidgetsTest extends OrangeHRMBase{
 	public void browserConfiguration()
 	{
 		initialization();
-		la = new LoginAdminPage();
-		dp = new DashboardWidgetsPage();
+		la = new LoginAdminPage(driver);
+		dp = new DashboardWidgetsPage(driver);
 	}
 	
 	@Test

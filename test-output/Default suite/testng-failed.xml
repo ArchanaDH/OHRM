@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.DashboardWidgetsTest">
+      <class name="Tests.LeaveEntitlementESSTest">
         <methods>
-          <include name="checkWidgetsESSTest"/>
-          <include name="TearDown"/>
           <include name="browserConfiguration"/>
+          <include name="verifyAppliedLeaveTest"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- Tests.DashboardWidgetsTest -->
+      </class> <!-- Tests.LeaveEntitlementESSTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
